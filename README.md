@@ -1,16 +1,109 @@
-# React + Vite
+📄 Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, ATS-friendly Resume Builder built with **React**, **Vite**, **Context API**, and **Tailwind CSS**. Create professional resumes with real-time preview and customizable sections.
 
-Currently, two official plugins are available:
+# 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ✅ Live Resume Preview
+- ✅ Professional ATS-Friendly Layout
+- ✅ Personal Information Section
+- ✅ Professional Summary
+- ✅ Skills Section
+- ✅ Education Section
+- ✅ Experience Section
+- ✅ Projects Section
+- ✅ Certifications Section
+- ✅ Languages Section
+- ✅ Add/Remove Multiple Entries
+- ✅ Dynamic Updates using Context API
+- ✅ Responsive UI
+- ✅ Clickable Email, Phone, LinkedIn, GitHub and Website Links
 
-## React Compiler
+# 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- Context API
+- Tailwind CSS
+- JavaScript
 
-## Expanding the ESLint configuration
+# ⚡ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 1. Clone the Repository
+
+bash
+git clone https://github.com/vinaykumbar17/resume-builder.git
+
+# 2. Move to Project Directory
+bash
+cd resume-builder
+
+# 3. Install Dependencies
+bash
+npm install
+
+# 4. Start Development Server
+bash
+npm run dev
+
+# 5. Open in Browser
+http://localhost:5173
+
+
+# 📑 Sections Included
+
+# Personal Information
+
+* Full Name
+* Email
+* Phone Number
+* LinkedIn
+* GitHub
+* Website
+
+# Professional Summary
+
+# Skills
+
+* Programming
+* Web Technologies
+* Database
+* Tools
+* Others
+* Cloud
+
+# Education
+
+# Experience
+
+# Projects
+
+# Certifications
+
+# Languages
+
+
+# 🎯 Key Functionalities
+
+* Dynamic Forms
+* Real-Time Preview
+* Context API State Management
+* Add / Remove Entries
+* Professional Resume Layout
+* ATS-Friendly Design
+
+# 🌐 Live Demo
+
+Coming Soon...
+
+
+# 👨‍💻 Author
+# Vinay Kumbar
+
+* GitHub: https://github.com/vinaykumbar17
+* LinkedIn: https://www.linkedin.com/in/vinay-kumbar-0549a4388
+
+# ⭐ Support
+If you like this project, consider giving it a ⭐ on GitHub.
+
+

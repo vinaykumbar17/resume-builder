@@ -15,10 +15,16 @@ function ResumeBuilder() {
   const previewContainerRef = useRef(null);
   const [previewWidth, setPreviewWidth] = useState(() => {
     try {
-      return Number(localStorage.getItem("previewWidth")) || 480;
-    } catch {
-      return 480;
+      const saved = Number(localStorage.getItem("previewWidth"));
+      if (saved) return saved;
+    } catch { /* ignore */ }
+
+    if (typeof window !== "undefined") {
+      const w = Math.floor(window.innerWidth * 0.9);
+      return Math.min(480, Math.max(320, w));
     }
+
+    return 480;
   });
   const [containerWidth, setContainerWidth] = useState(previewWidth);
   const draggingRef = useRef(false);
@@ -49,7 +55,8 @@ function ResumeBuilder() {
     function onMove(e) {
       if (!draggingRef.current) return;
       const delta = e.clientX - startXRef.current;
-      const newWidth = Math.max(320, Math.min(window.innerWidth - 320, startWidthRef.current - delta));
+      const maxAllowed = Math.max(280, window.innerWidth - 240);
+      const newWidth = Math.max(280, Math.min(maxAllowed, startWidthRef.current - delta));
       setPreviewWidth(newWidth);
     }
 

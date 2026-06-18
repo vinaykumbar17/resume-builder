@@ -36,3 +36,21 @@ body {
     border: none !important;
   }
 }
+
+/* Responsive helpers */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make resume titles responsive */
+.resume-section-title {
+  font-size: clamp(12px, 1.1vw, 13px);
+}
+
+/* Ensure builder layout elements don't overflow */
+.resizer-handle, .preview-container {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
